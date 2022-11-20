@@ -6,7 +6,7 @@
     height: fit-content;
     top: 10%;
     left: 10%;
-    background-color: rgba(238, 255, 255, .85);
+    background-color: rgba(238, 255, 255, .35);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     color: #363636;
@@ -17,8 +17,19 @@
     box-shadow: rgba(0, 0, 0, .05);
 }
 
+/*夜间模式右键菜单背景及字体颜色*/
+[data-theme="dark"] #rightMenu {
+    background-color: rgba(0, 0, 0, .35) !important;
+    color:rgba(255,255,255,.7) !important;
+}
+
 #rightMenu a {
     color: #363636;
+}
+
+/*夜间模式右键a链接的字体颜色*/
+[data-theme="dark"] #rightMenu a {
+    color: rgba(255,255,255,.7);
 }
 
 #rightMenu .rightMenu-group {
@@ -36,6 +47,7 @@
 }
 
 #rightMenu .rightMenu-group .rightMenu-item {
+    text-align: center;
     border-radius: 8px;
     transition: .3s;
     cursor: pointer
@@ -50,8 +62,14 @@
     display: flex
 }
 
+/* 夜间模式右键菜单hover样式 */
+[data-theme="dark"] #rightMenu .rightMenu-group .rightMenu-item:hover {
+    background-color: rgba(255,255,255,.7);
+    color: black;
+}
+
 #rightMenu .rightMenu-group .rightMenu-item:hover {
-    background-color: #6f42c1;
+    background-color: rgba(0,0,0,.7);
     color: #fff;
 }
 

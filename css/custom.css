@@ -35,4 +35,26 @@
     color: #939293;
 }
 
+#archive,
+.card-widget,
+.recent-post-item,
+#category,
+#post,
+.search-dialog,
+.local-search-box--input,
+#page {
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, .35) !important;
+}
 
+[data-theme="dark"] #archive,
+[data-theme="dark"] .card-widget,
+[data-theme="dark"] .recent-post-item,
+[data-theme="dark"] #category,
+[data-theme="dark"] #post,
+[data-theme="dark"] .search-dialog,
+[data-theme="dark"] .local-search-box--input,
+[data-theme="dark"] #page {
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, .35) !important;
+}
